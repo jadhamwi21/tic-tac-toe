@@ -1,0 +1,280 @@
+body {
+	margin: 0px;
+	background-color: #52525a;
+	font-family: "Goldman", cursive;
+}
+
+header {
+	background-color: white;
+	height: 80px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header > div {
+	box-sizing: border-box;
+	height: auto;
+	width: 200px;
+}
+
+#gametitle {
+	color: #52525a;
+	font-size: 30px;
+	width: auto;
+	border-bottom: solid 1px #52525a;
+	border-top: solid 1px #52525a;
+}
+
+#gamemode {
+	font-size: 20px;
+	outline: none;
+	appearance: none;
+	padding: 5px;
+	border-radius: 4px;
+	color: black;
+}
+
+.multiplayer {
+	color: #0074d9;
+}
+
+.computer {
+	color: #ff4136;
+}
+
+table {
+	border-collapse: collapse;
+	border-style: hidden;
+	height: 400px;
+	width: 450px;
+	margin: 5% auto;
+}
+
+table td {
+	border: solid 2px black;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+}
+
+table i {
+	font-size: 90px;
+}
+
+.X {
+	color: red;
+}
+
+#button-container {
+	height: 100px;
+	width: 150px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#start-button {
+	background: black;
+	color: white;
+	outline: none;
+	border: solid 1px grey;
+	height: 40px;
+	width: 100px;
+	border-radius: 6px;
+}
+
+#start-button:hover {
+	cursor: pointer;
+	opacity: 0.9;
+}
+
+#playersinput-box {
+	position: absolute;
+	top: 210px;
+	left: -100%;
+	transform: translate(-50%, -50%);
+	color: white;
+	background-color: black;
+	border: double 1px grey;
+	height: auto;
+	width: 350px;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slide_effect {
+	from {
+		left: -100%;
+	}
+	to {
+		left: 50%;
+	}
+}
+
+@keyframes slide_effect_reverse {
+	from {
+		left: 50%;
+	}
+	to {
+		left: -100%;
+	}
+}
+
+#playersinput-box > div:nth-of-type(1) {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.player-input-part {
+	height: 80%;
+	width: 40%;
+	margin: 0 10px;
+}
+
+.player-input-part > h3 {
+	text-align: center;
+}
+
+.player-input-part input::placeholder {
+	text-align: center;
+	color: black;
+	font-size: 14px;
+}
+
+.player-input-part input {
+	width: 80%;
+	border-radius: 10px;
+	outline: none;
+	padding: 3px;
+	margin: 10px 6px;
+	color: black;
+	font-size: 18px;
+}
+
+#begin-button-container {
+	text-align: center;
+}
+
+#begin-button {
+	background: black;
+	color: white;
+	outline: none;
+	border: solid 1px grey;
+	height: 25px;
+	width: 50px;
+	padding: 3px;
+	margin: 4px 0;
+	border-radius: 4px;
+	font-weight: 600;
+}
+
+#begin-button:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+#begin-button-container {
+	text-align: center;
+}
+
+#cancel-button {
+	background: black;
+	color: white;
+	outline: none;
+	border: solid 1px grey;
+	height: 25px;
+	width: 50px;
+	padding: 3px;
+	margin: 4px 0;
+	border-radius: 4px;
+	font-weight: 600;
+}
+
+#cancel-button:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.player-input-part > div {
+	display: block;
+	color: white;
+	height: 10px;
+	width: 100px;
+	text-align: center;
+	position: relative;
+	right: -10px;
+}
+
+#result-container {
+	height: auto;
+	width: auto;
+	display: inline-block;
+	background-color: black;
+	border: double 2px white;
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#result-title {
+	color: white;
+	text-align: center;
+	margin: 20px 20px;
+}
+
+#age {
+	color: white;
+	text-align: center;
+}
+
+#ok-button-container {
+	height: 25px;
+	width: 50px;
+	margin: 10px auto;
+}
+
+#ok-button {
+	background: black;
+	color: white;
+	outline: none;
+	border: solid 1px grey;
+	height: 25px;
+	width: 50px;
+	padding: 3px;
+	margin: 4px 0;
+	border-radius: 4px;
+	font-weight: 600;
+}
+
+#ok-button:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+#symbol {
+	color: white;
+	text-align: center;
+}
+
+@keyframes result_box_forward {
+	from {
+		bottom: 100%;
+	}
+	to {
+		bottom: 42vh;
+	}
+}
+
+@keyframes result_box_backward {
+	from {
+		bottom: 42%;
+	}
+	to {
+		bottom: 100%;
+	}
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f8c25cf953.js" crossorigin="anonymous"></script>
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <header>
+        <div></div>
+        <div id="gametitle">Tic Tac Toe</div>
+        <div><select id="gamemode" >
+            <option class="multiplayer">Multiplayer</option>
+            <option class="computer">Computer</option>
+        </select></div>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <div id="button-container">
+            <button id="start-button">Start</button>
+        </div>
+        <div id="playersinput-box">
+            <div>
+                <div class="player-input-part">
+                    <h3>Player 1:</h3>
+
+                    <input type="text" name="player1-name" placeholder="Full Name"> Age:
+                    <input type="range" min="8" max="60" value="8">
+                    <div></div>
+
+                </div>
+                <div class="player-input-part">
+                    <h3>Player 2:</h3>
+
+                    <input type="text" name="player2-name" placeholder="Full Name">Age:
+                    <input type="range" min="8" max="60" value="8">
+                    <div></div>
+
+                </div>
+            </div>
+            <div id="begin-button-container">
+                <button id="begin-button">Begin!</button>
+                <button id="cancel-button">Cancel</button>
+            </div>
+        </div>
+        <div id="result-container">
+            <h3 id="result-title"></h3>
+            <h3 id="age"></h3>
+            <h3 id="symbol"></h3>
+            <div id="ok-button-container">
+                <button id="ok-button">OK!</button>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
